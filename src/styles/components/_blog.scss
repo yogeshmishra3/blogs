@@ -1,0 +1,31 @@
+.blog-container {
+  width: 70%;
+  padding-right: 10%;
+  box-sizing: border-box;
+
+  @include respond-to(large) {
+    width: 100%;
+  }
+
+  @include respond-to(large) {
+    padding: 0 5%;
+  }
+
+  p,
+  span,
+  li {
+    font-size: 1.1em;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+.blog-side-container {
+  width: 30%;
+  display: flex;
+  @include respond-to(large) {
+    width: 100%;
+  }
+}
