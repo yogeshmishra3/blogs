@@ -1,9 +1,9 @@
-name: Deploy Next.js to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main # Change to your default branch if not `main`
+      - main # Change this to your default branch if needed
 
 jobs:
   deploy:
@@ -11,23 +11,24 @@ jobs:
 
     steps:
       # Step 1: Check out the repository
-      - name: Checkout Code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       # Step 2: Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 20 # Use the version compatible with your Next.js project
 
       # Step 3: Install dependencies
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm install
 
-      # Step 4: Build the project (includes export due to `output: 'export'`)
-      - name: Build Project
-        echo "NEXT_PUBLIC_BASE_PATH=/blogs" >> .env
-        echo "NEXT_PUBLIC_ASSET_PREFIX=/blogs" >> .env
+      # Step 4: Set up environment variables and build the project
+      - name: Build the project
+        env:
+          NEXT_PUBLIC_BASE_PATH: /blogs # Replace "blogs" with your repository name
+          NEXT_PUBLIC_ASSET_PREFIX: /blogs # Ensure asset paths are set correctly
         run: npm run build
 
       # Step 5: Deploy to GitHub Pages
