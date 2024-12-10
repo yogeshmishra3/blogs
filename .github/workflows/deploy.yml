@@ -26,6 +26,8 @@ jobs:
 
       # Step 4: Build the project (includes export due to `output: 'export'`)
       - name: Build Project
+        echo "NEXT_PUBLIC_BASE_PATH=/blogs" >> .env
+        echo "NEXT_PUBLIC_ASSET_PREFIX=/blogs" >> .env
         run: npm run build
 
       # Step 5: Deploy to GitHub Pages
