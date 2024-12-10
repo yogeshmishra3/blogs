@@ -11,7 +11,7 @@ const PC: React.FC = () => {
                     <div className="promo icon-promo-card col-6">
                         <div className="icon-image">
                             <a href="https://blogs.perficient.com/author/rmishra/" target="_blank" rel="noopener noreferrer">
-                                <img src="Images/prft-icon.png" alt="icon" />
+                                <img src="/Images/prft-icon.png" alt="icon" />
                             </a>
                         </div>
                         <div className="title">
@@ -26,7 +26,7 @@ const PC: React.FC = () => {
                     <div className="promo icon-promo-card col-6">
                         <div className="icon-image">
                             <a href="https://dailysitecore.blogspot.com/" target="_blank" rel="noopener noreferrer">
-                                <img src="images/ds-blog-logo.png" alt="icon" />
+                                <img src="/images/ds-blog-logo.png" alt="icon" />
                             </a>
                         </div>
                         <div className="title">
@@ -41,7 +41,7 @@ const PC: React.FC = () => {
                     <div className="promo icon-promo-card col-6">
                         <div className="icon-image">
                             <a href="https://github.com/ravindra-mishra" target="_blank" rel="noopener noreferrer">
-                                <img src="images/github-images.jpeg" alt="icon" />
+                                <img src="/images/github-images.jpeg" alt="icon" />
                             </a>
                         </div>
                         <div className="title">
@@ -56,7 +56,7 @@ const PC: React.FC = () => {
                     <div className="promo icon-promo-card col-6">
                         <div className="icon-image">
                             <a href="https://sitecore.stackexchange.com/users/13057/ravindra-mishra" target="_blank" rel="noopener noreferrer">
-                                <img src="images/stack-exchange-sitecore.png" alt="icon" />
+                                <img src="/images/stack-exchange-sitecore.png" alt="icon" />
                             </a>
                         </div>
                         <div className="title">

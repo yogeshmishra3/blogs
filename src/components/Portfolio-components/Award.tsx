@@ -11,7 +11,7 @@ const Award = () => {
             </div>
             <div className="container">
               <div className="promo-image">
-                <img src="images/award-blue-icon.png" alt="Awards" />
+                <img src="/images/award-blue-icon.png" alt="Awards" />
               </div>
               <div className="promo-content">
                 <div className="center-align-content">

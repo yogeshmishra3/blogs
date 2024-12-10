@@ -8,7 +8,7 @@ const Experience: React.FC = () => {
       </div>
       <div className="container">
         <div className="promo-image">
-          <img src="images/about-us.png" alt="Experience" />
+          <img src="/images/about-us.png" alt="Experience" />
         </div>
         <div className="promo-content">
           <div className="experience">
