@@ -1,6 +1,9 @@
+import { useRouter } from 'next/router';
+import Image from "next/image";
 import React from "react";
 
 const PC: React.FC = () => {
+    const { basePath } = useRouter();
     return (
         <div className="component-section component-content">
             <div className="container">
@@ -11,7 +14,7 @@ const PC: React.FC = () => {
                     <div className="promo icon-promo-card col-6">
                         <div className="icon-image">
                             <a href="https://blogs.perficient.com/author/rmishra/" target="_blank" rel="noopener noreferrer">
-                                <img src="/Images/prft-icon.png" alt="icon" />
+                                <Image unoptimized src={`${basePath}Images/prft-icon.png`} alt="icon" />
                             </a>
                         </div>
                         <div className="title">
@@ -26,7 +29,7 @@ const PC: React.FC = () => {
                     <div className="promo icon-promo-card col-6">
                         <div className="icon-image">
                             <a href="https://dailysitecore.blogspot.com/" target="_blank" rel="noopener noreferrer">
-                                <img src="/images/ds-blog-logo.png" alt="icon" />
+                                <Image unoptimized src={`$basePath"/images/ds-blog-logo.png`} alt="icon" />
                             </a>
                         </div>
                         <div className="title">
@@ -41,7 +44,7 @@ const PC: React.FC = () => {
                     <div className="promo icon-promo-card col-6">
                         <div className="icon-image">
                             <a href="https://github.com/ravindra-mishra" target="_blank" rel="noopener noreferrer">
-                                <img src="/images/github-images.jpeg" alt="icon" />
+                                <Image unoptimized src={`${basePath}/images/github-images.jpeg`} alt="icon" />
                             </a>
                         </div>
                         <div className="title">
@@ -56,7 +59,7 @@ const PC: React.FC = () => {
                     <div className="promo icon-promo-card col-6">
                         <div className="icon-image">
                             <a href="https://sitecore.stackexchange.com/users/13057/ravindra-mishra" target="_blank" rel="noopener noreferrer">
-                                <img src="/images/stack-exchange-sitecore.png" alt="icon" />
+                                <Image unoptimized src={`${basePath}/images/stack-exchange-sitecore.png`} alt="icon" />
                             </a>
                         </div>
                         <div className="title">

@@ -1,6 +1,9 @@
+import { useRouter } from 'next/router';
+import Image from 'next/image';
 import React from 'react';
 
 const PromoSection: React.FC = () => {
+  const { basePath } = useRouter();
   return (
     <div className="promo image-right background-primary">
       <div className="container">
@@ -27,7 +30,7 @@ const PromoSection: React.FC = () => {
           </div>
         </div>
         <div className="promo-image">
-          <img src="/images/home-right.png" alt="Hi, I am Ravindra!" />
+          <Image unoptimized src={`${basePath}/images/home-right.png`} alt="Hi, I am Ravindra!" />
         </div>
       </div>
     </div>

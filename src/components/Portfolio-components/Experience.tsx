@@ -1,6 +1,9 @@
+import { useRouter } from 'next/router';
+import Image from "next/image";
 import React from "react";
 
 const Experience: React.FC = () => {
+  const { basePath } = useRouter();
   return (
     <div className="promo image-left background-gray">
       <div className="component-title">
@@ -8,7 +11,7 @@ const Experience: React.FC = () => {
       </div>
       <div className="container">
         <div className="promo-image">
-          <img src="/images/about-us.png" alt="Experience" />
+          <Image unoptimized src={`${basePath}/images/about-us.png`} alt="Experience" />
         </div>
         <div className="promo-content">
           <div className="experience">
