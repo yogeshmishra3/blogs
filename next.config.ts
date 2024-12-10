@@ -7,8 +7,8 @@ const nextConfig: NextConfig = {
     includePaths: [path.join(__dirname, 'src/styles')], // Adjust the path to your styles folder as needed
   },
   output: 'export',
-  basePath: '/blogs',
-  assetPrefix: '/blogs',
+  basePath: '',
+  assetPrefix: '',
 };
 
 export default nextConfig;
