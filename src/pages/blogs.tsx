@@ -29,7 +29,7 @@ const Home: React.FC<HomeProps> = ({ blogs }) => {
       <BasicMeta url={"https://dailysitecore.blogspot.com"} title="Blogs" description="Sitecore CMS. A technical blog about sitecore learning for sitecore developer. Technologies like Sitecore, SXA, Headless, XM Cloud."/>
       <OpenGraphMeta  url={"https://dailysitecore.blogspot.com"} title="Blogs" description="Sitecore CMS. A technical blog about sitecore learning for sitecore developer. Technologies like Sitecore, SXA, Headless, XM Cloud." />
       <TwitterCardMeta  url={"https://dailysitecore.blogspot.com"} title="Blogs" description="Sitecore CMS. A technical blog about sitecore learning for sitecore developer. Technologies like Sitecore, SXA, Headless, XM Cloud."  />
-      <TitleBanner title="Blogs"/>
+      <TitleBanner title="Recent Blogs"/>
 
       <div className="container">
         <div className="container-fluid">
