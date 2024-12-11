@@ -1,9 +1,6 @@
-import { useRouter } from 'next/router';
-import Image from "next/image";
 import React from "react";
 
 const Experience: React.FC = () => {
-  const { basePath } = useRouter();
   return (
     <div className="promo image-left background-gray">
       <div className="component-title">
@@ -11,7 +8,7 @@ const Experience: React.FC = () => {
       </div>
       <div className="container">
         <div className="promo-image">
-          <Image unoptimized src={`${basePath}/images/about-us.png`} alt="Experience" />
+          <img src={`images/about-us.png`} alt="Experience" />
         </div>
         <div className="promo-content">
           <div className="experience">
@@ -61,7 +58,9 @@ const Experience: React.FC = () => {
                 <div className="timeline-item">
                   <div className="timeline-marker"></div>
                   <div className="timeline-content">
-                    <p className="timeline-date">October 2018 to October 2019</p>
+                    <p className="timeline-date">
+                      October 2018 to October 2019
+                    </p>
                     <h4>Trainee Engineer (Intern Developer)</h4>
                   </div>
                 </div>

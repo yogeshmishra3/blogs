@@ -26,17 +26,29 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ blogs }) => {
   return (
     <Layout>
-      <BasicMeta url={"https://dailysitecore.blogspot.com"} title="Blogs" description="Sitecore CMS. A technical blog about sitecore learning for sitecore developer. Technologies like Sitecore, SXA, Headless, XM Cloud."/>
-      <OpenGraphMeta  url={"https://dailysitecore.blogspot.com"} title="Blogs" description="Sitecore CMS. A technical blog about sitecore learning for sitecore developer. Technologies like Sitecore, SXA, Headless, XM Cloud." />
-      <TwitterCardMeta  url={"https://dailysitecore.blogspot.com"} title="Blogs" description="Sitecore CMS. A technical blog about sitecore learning for sitecore developer. Technologies like Sitecore, SXA, Headless, XM Cloud."  />
-      <TitleBanner title="Recent Blogs"/>
+      <BasicMeta
+        url={"https://dailysitecore.blogspot.com"}
+        title="Blogs"
+        description="Sitecore CMS. A technical blog about sitecore learning for sitecore developer. Technologies like Sitecore, SXA, Headless, XM Cloud."
+      />
+      <OpenGraphMeta
+        url={"https://dailysitecore.blogspot.com"}
+        title="Blogs"
+        description="Sitecore CMS. A technical blog about sitecore learning for sitecore developer. Technologies like Sitecore, SXA, Headless, XM Cloud."
+      />
+      <TwitterCardMeta
+        url={"https://dailysitecore.blogspot.com"}
+        title="Blogs"
+        description="Sitecore CMS. A technical blog about sitecore learning for sitecore developer. Technologies like Sitecore, SXA, Headless, XM Cloud."
+      />
+      <TitleBanner title="Recent Blogs" />
 
       <div className="container">
         <div className="container-fluid">
           <div className="main-container">
-            <div className="blog-list">
+            <div className="blog-list card-list">
               {blogs.map((blog) => (
-                <div key={blog.slug} className="blog-post-card">
+                <div key={blog.slug} className="blog-post-card card-item">
                   <h3 className="blog-heading">
                     <Link href={`/blogs/${blog.slug}`}>{blog.title}</Link>
                   </h3>

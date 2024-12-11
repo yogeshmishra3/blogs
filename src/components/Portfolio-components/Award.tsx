@@ -1,9 +1,6 @@
-import { useRouter } from 'next/router';
-import Image from 'next/image';
-import React from 'react';
+import React from "react";
 
 const Award = () => {
-  const { basePath } = useRouter();
   return (
     <div>
       <div className="component-section component-content">
@@ -14,7 +11,7 @@ const Award = () => {
             </div>
             <div className="container">
               <div className="promo-image">
-                <Image unoptimized src={`${basePath}/images/award-blue-icon.png`} alt="Awards" />
+                <img src={`images/award-blue-icon.png`} alt="Awards" />
               </div>
               <div className="promo-content">
                 <div className="center-align-content">

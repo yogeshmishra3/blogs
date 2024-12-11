@@ -1,0 +1,25 @@
+.post-list {
+  padding: 0;
+  .post-card {
+    iframe {
+      border: none;
+      height: 550px;
+
+      iframe {
+        overflow: hidden; /* Hide the native scrollbar */
+        position: relative;
+      }
+
+      /* Create a custom scrollbar-like overlay */
+      .scrollbar {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 10px;
+        height: 100%;
+        background-color: #ccc;
+        cursor: pointer;
+      }
+    }
+  }
+}

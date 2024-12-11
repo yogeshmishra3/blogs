@@ -84,31 +84,31 @@ pre {
     border-radius: unset;
     background: unset;
   }
+}
 
-  /* width */
-  &::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-    border-radius: 10px;
-    padding: 5px;
-    border-radius: 50%;
-  }
+/* width */
+:root::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+  padding: 5px;
+  border-radius: 50%;
+}
 
-  /* Track */
-  &::-webkit-scrollbar-track {
-    background: transparent;
-  }
+/* Track */
+:root::-webkit-scrollbar-track {
+  background: transparent;
+}
 
-  /* Handle */
-  &::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
-  }
+/* Handle */
+:root::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
 
-  /* Handle on hover */
-  &::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
+/* Handle on hover */
+:root::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 a {

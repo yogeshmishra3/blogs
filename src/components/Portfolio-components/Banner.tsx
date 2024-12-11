@@ -1,9 +1,6 @@
-import { useRouter } from 'next/router';
-import Image from 'next/image';
-import React from 'react';
+import React from "react";
 
 const PromoSection: React.FC = () => {
-  const { basePath } = useRouter();
   return (
     <div className="promo image-right background-primary">
       <div className="container">
@@ -16,21 +13,26 @@ const PromoSection: React.FC = () => {
             Senior Sitecore Developer & Full Stack Web Developer
             <br />
             <br />
-            Having over 5 years of experience in development, specializing in Sitecore and ASP.NET applications,
-            I have a strong background in creating scalable and efficient solutions.
+            Having over 5 years of experience in development, specializing in
+            Sitecore and ASP.NET applications, I have a strong background in
+            creating scalable and efficient solutions.
             <br />
             <br />
-            My expertise includes Sitecore SXA, JSS, C#, and .NET, with a keen interest in frontend technologies
-            like JavaScript, jQuery, and SCSS.
+            My expertise includes Sitecore SXA, JSS, C#, and .NET, with a keen
+            interest in frontend technologies like JavaScript, jQuery, and SCSS.
           </div>
           <div className="button button-primary-alternate">
-            <a href="https://www.linkedin.com/in/mishra-ravindra/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/mishra-ravindra/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               View Profile
             </a>
           </div>
         </div>
         <div className="promo-image">
-          <Image unoptimized src={`${basePath}/images/home-right.png`} alt="Hi, I am Ravindra!" />
+          <img src={`images/home-right.png`} alt="Hi, I am Ravindra!" />
         </div>
       </div>
     </div>
